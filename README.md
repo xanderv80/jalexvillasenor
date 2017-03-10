@@ -1,2 +1,0 @@
-# jalexvillasenor
-online resumae
