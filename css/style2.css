@@ -1,0 +1,212 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css);
+
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css);
+
+body {
+	margin: 0px auto;
+	background: #000;
+}
+
+a {
+	text-decoration: none !important;
+}
+a:hover, a:visited, a:link, a:active, a:focus, a:click {
+	text-decoration: none !important;
+}
+
+#backwall{
+	width: 100%;
+	height: 920px;
+	margin: 0px auto;
+}
+#tile{
+	width: 100%;
+	height: 1975px;
+	margin: 0px auto;
+	background: url("C:/Users/Xander/Documents/GitHub/Resumae/img/MMTile.png");
+	animation: megaman linear 12s infinite;
+}
+
+@keyframes megaman {
+	from { background-position: 0px; }
+	to { background-position: 255px; }
+}
+
+#canvas{
+	width: 100%;
+	height: 200px;
+	margin: 0px auto;
+	background-color: black; 
+}
+
+
+#info {
+	padding: 2%;
+	margin: 1% 0;
+	background-color: #000033;
+	border-radius: 25px;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 80%;
+	float: left;
+	margin-left: 45px; 
+	background-clip: padding-box;
+	border: 5px solid transparent;
+	max-height: 600px;
+}
+
+#details{
+	background-color: #003366;
+	border-radius: 25px;
+}
+
+.infotext{
+	color:#9999cc;
+	padding: 2%;
+	margin: 1% 0;
+}
+
+h6 {
+	font-size: 3px !important;
+}
+
+
+#perks {
+	border-radius: 25px;
+	background-color: #000033;
+	overflow: hidden;
+	float: right; 
+	padding: 0; 
+	margin: 1% 0;
+	margin-right: 2%; 
+	max-height: 600px;
+	position: relative;
+}
+
+#perktree{
+	background-color: #000033;
+	margin: 0px auto;
+	border-radius: 25px;
+	align-content: center;
+	overflow: hidden;
+	height: 100%;
+}
+
+#perktree{
+	border-radius: 25px;
+	display: inline-block;
+
+/*
+animation: perkscroll 3s linear 0s infinite normal forwards; /* Animation: Name * Duration * Timing-Function Delay * Iteration * Direction Fill-Mode Play-State*/
+}
+
+
+
+.perkbox{
+	animation: perkscrolla 10s linear 0s 1,
+	           perkscrollb 25s linear 8s infinite;
+	background-color: #003366;
+	color: #9999cc;
+	padding: 1%;
+	overflow: hidden;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 50%;
+	border-radius: 25px;
+	width: 100%;
+	margin: 0px auto;
+	display: inline-block;
+	position: relative;
+}
+
+@keyframes perkscrolla {
+	from {transform: translateY(0px);}
+	to { transform: translateY(600px);}
+}
+
+@keyframes perkscrollb {
+	from { transform: translateY(-1600px);}
+	to { transform: translateY(600px);}
+}
+
+
+#perkheader{
+	padding: 2%;
+	margin: 1% 0;
+	text-align: center;
+	color: #000099;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 120%;
+}
+
+.perktitle{
+	color: #9999cc;
+	padding: 1%;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 120%;
+	margin-bottom: 3%;
+	overflow: hidden; 
+}
+
+.perkicon {
+	margin: 0px auto;
+}
+
+.perkicon img:first-child {
+	height:100px;   
+}
+
+
+
+    /* For mobile phones: */
+@media screen and (max-width: 600px) {
+	#perks {display: none;}
+	#profilesm {
+		display: block;
+		margin: auto;
+		margin-bottom: 2%;
+	}
+	#profiletextsm{
+		display: block;
+	}
+	#profiletextlg{
+		display: none;
+	}
+
+	#profilelg {
+		display: none;
+	}
+
+	#intro h2 {
+		font-size: 15px;
+	}
+	#intro p {
+		font-size: 10px;
+	}
+	#info{
+		margin-top: 6%;
+	}
+
+}
+
+@media screen and (min-width: 740px) {
+	#profilesm {
+		display: none;
+	}
+	#profiletextsm{
+		display: block;
+	}
+	#profiletextlg{
+		display: block;
+	}
+
+	#perks{
+		display: block;
+	}
+
+	#profilelg {
+		display: inline-block;
+	}
+
+					<img id="profilesm" src="./img/xandernerdsm.png" alt="Grapic Artist">
+	
